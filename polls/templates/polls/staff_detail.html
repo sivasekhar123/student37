@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staff details</title>
+</head>
+<body>
+  {% if staff %}
+      <h1 align="center">staff details</h1>
+      <h3>name:  {{staff.name}}</h3>
+      <h3>email:  {{staff.email}}</h3>
+      <h3>age:  {{staff.age}}</h3>
+      <h3>gender:  {{staff.gender}}</h3>
+      <h3>department:  {{staff.department}}</h3>
+      <h3>qualification:  {{staff.qualification}}</h3>
+      <img src="{{staff.profile_pic.url}}" width="300" height="400" alt="image missed">
+  {% endif %}
+      <h3 align="center">
+          <a href="/student_info" role="button"> student info</a>
+          <br>
+          <a href="/all_staff" role="button">staff info</a>
+          <br>
+          <a href="/logout" role="button">logout</a>
+      </h3>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

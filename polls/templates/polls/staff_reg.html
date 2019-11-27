@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staff registration</title>
+</head>
+<body>
+      <h1 align="center"> staff registration </h1>
+      <form action="." method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <h3>username:<input type="text" name="username"></h3>
+          <h3>password:<input type="text" name="pwd"></h3>
+          <h3>email:<input type="text" name="email"></h3>
+          <h3>name:<input type="text" name="name"></h3>
+          <h3>age:<input type="text" name="age"></h3>
+          <h3>gender:<input type="text" name="gender"></h3>
+          <h3>department:</h3>
+          <select name="department">
+              <option value="mechanical">Mechanical</option>
+              <option value="civil">Civil</option>
+              <option value="electrical">Electrical</option>
+              <option value="electronics">Electronics</option>
+              <option value="computer">Computer</option>
+          </select>
+          <h3>qualification:<input type="text" name="qualification"></h3>
+          <h3>image:<input type="file" name="profile_pic"></h3>
+          <h3 align="center">
+              <input type="submit" value="register">
+              <a href="/index" role="button">go to home</a>
+          </h3>
+      </form>
+
+</body>
+</html>

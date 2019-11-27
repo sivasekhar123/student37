@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all students</title>
+</head>
+<body>
+      <h3 align="center"> all students</h3>
+      {%if stu_list%}
+        {% for list in stu_list%}
+          name:{{list.name}}--department:{{list.department}}
+        {% endfor%}
+      {% endif%}
+      <h3 align="center"><a href="/student_detail" role="button"> back </a></h3>
+
+</body>
+</html>

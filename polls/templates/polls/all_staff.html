@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all staff</title>
+</head>
+<body>
+      {% if stf %}
+      {% for s in stf %}
+         name:{{s.name}} <br>
+         age:{{s.age}}<br>
+         email: {{s.email }}<br>
+         department:{{s.department}} <br>
+      {% endfor %}
+      {% endif %}
+</body>
+</html>

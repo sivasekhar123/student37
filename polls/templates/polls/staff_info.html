@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>staff info</h1>
+     {% if staff_list %}
+         {% for staff in staff_list %}
+               name:{{staff.name}}<p><br>
+         {% endfor %}
+     {% endif %}
+      <h3 align="center"><a href="/student_detail" role="button"> back </a></h3>
+</body>
+</html>

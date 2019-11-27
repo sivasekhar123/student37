@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student details</title>
+</head>
+<body>
+   {% if student %}
+       <h1 align="center"> student details </h1>
+       <h3>name:  {{student.name}}</h3>
+       <h3>email:  {{student.email}}</h3>
+       <h3>dob:  {{student.dob}}</h3>
+       <h3>father:  {{student.father}}</h3>
+       <h3>mother:  {{student.mother}}</h3>
+       <h3>gender: {{student.gender}}</h3>
+       <h3>department:  {{student.department}}</h3>
+       <img src="{{student.profile_pic.url}}" width="300" height="200" alt="image missed">
+     {% else %}
+         <h3> details not found </h3>
+   {% endif %}
+       <h3 align="center">
+           <a href="/logout" role="button"> logout</a><br>
+           <a href="/staff_info" role="button"> staff details </a><br>
+           <a href="/all_students" role="button"> all students</a>
+       </h3>
+</body>
+</html>
